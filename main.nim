@@ -1,3 +1,6 @@
+## APACHE 2.0 LICENSE
+## original at https://github.com/OrichalcatLythe/Lyt_Benchmark
+
 import std/[os, math, random, strutils, strformat, posix, volatile]
 
 # Global Configuration

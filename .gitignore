@@ -2,3 +2,6 @@
 /wyvern/
 /bin/
 main
+
+.DS_Store
+Thumbs.db

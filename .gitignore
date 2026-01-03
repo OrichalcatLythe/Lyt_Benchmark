@@ -1,0 +1,4 @@
+*.log
+/wyvern/
+/bin/
+main

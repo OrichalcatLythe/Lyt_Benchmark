@@ -1,3 +1,6 @@
+**v0.83**
+-- Smaller typo fixes
+
 **v0.82**
 -- Minor Polish
 -- Added Github url to -V and -h
@@ -30,7 +33,7 @@
 
 **v0.73**
 -- Improved RAM benchmarking logic (Using 64bits (8 bytes) per write instead of 1 bits)
--- Improved clarify in RamWrite()
+-- Improved clarity in RamWrite()
 -- Added simple value correctness check in --memory-buffer-size flag
 
 **v0.71**
@@ -40,24 +43,8 @@
 
 **v0.7**
 -- Improved UX with more detail
--- RAM benchmark now tests GB written/s instead of Write ops/s
+-- RAM benchmark now tests GB writen/s instead of Write ops/s
 -- RAM benchmark now uses preallocated buffer over dynamic writing
 -- Preparations for implementing new error & error display
 -- Python & Go Support dropped
-
-**v0.6**
--- New branch: Nim
--- Clock check frequency reduced from 'after each 1000 work units' to 'after each 10000 work units'
-
-**v0.5**
--- New branch: Go
--- XOR calculation replaced with pow in Complex Math and Multiprocessing Benchmark
--- RMLL Support dropped
-
-**v0.2**
--- Added RAM Write Ops/s benchmark
--- Added Multiprocessing benchmark
--- Minor UX improvement
-
-**v0.1**
--- Initial alpha release in RMLL & Python
+-- First public version

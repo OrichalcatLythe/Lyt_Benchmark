@@ -3,8 +3,8 @@
 
 import std/[os, math, random, strutils, strformat, posix, volatile]
 
-# Global Configuration
-const VER = "v0.82"
+# Global Configuration   
+const VER = "v0.83"
 var
     firstRow, secondRow, thirdRow, fourthRow, fifthRow, sixthRow: seq[string] = @[".........", ".........", ".........", "........."]
 var
@@ -21,10 +21,10 @@ var msgList = ""
 ## Do NOT use const instead of let here, since CLOCK_MONOTONIC aren't exposed as compile-time constants on BSD it will break BSD support since it can't evaluate it as constants.
 when declared(CLOCK_MONOTONIC_RAW):
   let RawClock = CLOCK_MONOTONIC_RAW
-  const ClockType = "MONOTRONIC_RAW"
+  const ClockType = "MONOTONIC_RAW"
 else:
   let RawClock = CLOCK_MONOTONIC
-  const ClockType = "MONOTRONIC_NON-RAW"
+  const ClockType = "MONOTONIC_NON-RAW"
 
 const BenchFault = -1 ##We'll use -1 in score to indicate FAULT as we never should receive a negative score and it's the simplest without rewriting the architecture significantly
 const BenchSkip = -2 ##Same reason as above, used when the utility is told to skip a specific test from CLI
